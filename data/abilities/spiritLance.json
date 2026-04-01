@@ -7,7 +7,7 @@
   "damage": 8,
   "chargeGain": 4,
   "pattern": {
-    "range": 15,
+    "range": 25,
     "chainCount": 0
   },
   "visuals": {

@@ -7,8 +7,8 @@
   "damage": 15,
   "chargeGain": 8,
   "pattern": {
-    "speed": 2,
-    "maxRange": 15,
+    "speed": 3,
+    "maxRange": 30,
     "piercing": false
   },
   "visuals": {

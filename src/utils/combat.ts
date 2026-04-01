@@ -2,8 +2,8 @@ import type { World, EntityId } from "../core/ecs/types.js";
 import type { PositionComponent } from "../components/position.js";
 import { ALL_DIRECTIONS, directionToVec, type Direction } from "./direction.js";
 
-const AIM_CORRIDOR_WIDTH = 2;
-const AIM_MAX_RANGE = 15;
+const AIM_CORRIDOR_WIDTH = 3;
+const AIM_MAX_RANGE = 25;
 
 /**
  * Proximity-based hit check. Returns true if (entityX, entityY) is close
@@ -39,8 +39,7 @@ export function getAimDirection(
   if (enemies.length === 0) return facing;
 
   let bestDir = facing;
-  let bestDist = Infinity;
-  let facingHasTarget = false;
+  let bestScore = Infinity;
 
   for (const dir of ALL_DIRECTIONS) {
     const vec = directionToVec(dir);
@@ -63,19 +62,13 @@ export function getAimDirection(
     }
 
     if (nearestInDir < Infinity) {
-      if (dir === facing) {
-        facingHasTarget = true;
-        if (nearestInDir < bestDist) {
-          bestDist = nearestInDir;
-          bestDir = dir;
-        }
-      } else if (nearestInDir < bestDist) {
-        bestDist = nearestInDir;
+      const score = dir === facing ? nearestInDir * 0.5 : nearestInDir;
+      if (score < bestScore) {
+        bestScore = score;
         bestDir = dir;
       }
     }
   }
 
-  if (facingHasTarget) return facing;
   return bestDir;
 }

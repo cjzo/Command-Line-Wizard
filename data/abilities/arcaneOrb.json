@@ -8,7 +8,7 @@
   "chargeGain": 10,
   "pattern": {
     "speed": 1,
-    "maxRange": 8,
+    "maxRange": 12,
     "detonateAfterTicks": 8,
     "explosionRadius": 2
   },

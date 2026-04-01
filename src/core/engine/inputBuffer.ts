@@ -63,8 +63,12 @@ export class InputBuffer {
 
   press(key: keyof InputState): void {
     if (this.isMovementKey(key)) {
-      this.movementExpiresAt[key] = Date.now() + this.movementLeaseMs;
-      this.lastMovementKey = key;
+      const now = Date.now();
+      const isFreshPress = this.movementExpiresAt[key] <= now;
+      this.movementExpiresAt[key] = now + this.movementLeaseMs;
+      if (isFreshPress) {
+        this.lastMovementKey = key;
+      }
       return;
     }
 

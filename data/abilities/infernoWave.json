@@ -7,7 +7,7 @@
   "damage": 8,
   "chargeGain": 6,
   "pattern": {
-    "range": 5,
+    "range": 8,
     "width": 4
   },
   "visuals": {

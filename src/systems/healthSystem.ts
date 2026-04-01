@@ -2,8 +2,12 @@ import type { System, World } from "../core/ecs/types.js";
 import type { HealthComponent } from "../components/health.js";
 import type { EnemyComponent } from "../components/enemy.js";
 import type { PlayerComponent } from "../components/player.js";
+import type { RenderableComponent } from "../components/renderable.js";
 import type { EventBus } from "../core/events/eventBus.js";
 import type { GameConfig } from "../config/defaults.js";
+import { createLifetime } from "../components/lifetime.js";
+
+const DEATH_CHARS = ["✦", "✕", "※", "⊹"];
 
 export class HealthSystem implements System {
   readonly name = "HealthSystem";
@@ -26,8 +30,6 @@ export class HealthSystem implements System {
       }
 
       if (world.hasComponent(id, "enemy")) {
-        const enemy = world.getComponent<EnemyComponent>(id, "enemy")!;
-
         const players = world.query("player");
         const killerId = players[0] ?? 0;
 
@@ -41,7 +43,16 @@ export class HealthSystem implements System {
           duration: this.config.combat.hitstopOnKill,
         });
 
-        world.destroyEntity(id);
+        const ren = world.getComponent<RenderableComponent>(id, "renderable");
+        if (ren) {
+          ren.char = DEATH_CHARS[Math.floor(Math.random() * DEATH_CHARS.length)];
+          ren.fg = "whiteBright";
+        }
+
+        for (const comp of ["enemy", "health", "velocity", "ai", "hitbox"]) {
+          world.removeComponent(id, comp);
+        }
+        world.addComponent(id, createLifetime(5));
       }
     }
   }
