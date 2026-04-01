@@ -2,7 +2,7 @@
   "id": "swarmling",
   "name": "Swarmling",
   "hp": 8,
-  "speed": 3,
+  "speed": 2,
   "damage": 4,
   "attackRange": 1,
   "attackCooldown": 3,

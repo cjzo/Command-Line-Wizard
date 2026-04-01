@@ -18,7 +18,7 @@ export interface GameConfig {
 export const DEFAULT_CONFIG: GameConfig = {
   grid: { width: 40, height: 20 },
   sidebar: { width: 28 },
-  tickMs: 120,
+  tickMs: 80,
   player: {
     hp: 100,
     speed: 1,

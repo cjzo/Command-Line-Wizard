@@ -46,11 +46,15 @@ export class AbilitySystem implements System {
       const dir = world.getComponent<DirectionComponent>(event.caster, "direction");
       if (!dir) continue;
 
+      const fireDirection = abilityData.type === "movement"
+        ? dir.facing
+        : event.direction;
+
       const success = executeAbility(
         world,
         event.caster,
         abilityData,
-        event.direction,
+        fireDirection,
         this.events,
         this.config,
       );

@@ -11,9 +11,9 @@
     "width": 3
   },
   "visuals": {
-    "chars": { "up": "▲", "down": "▼", "left": "◄", "right": "►" },
+    "chars": { "up": "△", "down": "▽", "left": "◁", "right": "▷" },
     "color": "cyan",
-    "trailChar": "*",
+    "trailChar": "❆",
     "trailColor": "cyanBright",
     "trailLifetime": 4
   },

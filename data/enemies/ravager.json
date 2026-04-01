@@ -2,7 +2,7 @@
   "id": "ravager",
   "name": "Ravager",
   "hp": 40,
-  "speed": 2,
+  "speed": 1,
   "damage": 16,
   "attackRange": 1,
   "attackCooldown": 4,

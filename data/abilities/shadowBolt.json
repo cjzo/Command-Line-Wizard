@@ -12,7 +12,7 @@
     "piercing": true
   },
   "visuals": {
-    "chars": { "up": "▪", "down": "▪", "left": "▪", "right": "▪" },
+    "chars": { "up": "◆", "down": "◆", "left": "◆", "right": "◆" },
     "color": "gray",
     "trailChar": "·",
     "trailColor": "blueBright",

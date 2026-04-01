@@ -12,7 +12,7 @@
     "chainRange": 3
   },
   "visuals": {
-    "chars": { "up": "│", "down": "│", "left": "─", "right": "─" },
+    "chars": { "up": "┃", "down": "┃", "left": "━", "right": "━" },
     "color": "yellow",
     "trailChar": "·",
     "trailColor": "yellowBright",

@@ -11,9 +11,9 @@
     "damageWidth": 1
   },
   "visuals": {
-    "chars": { "up": "↑", "down": "↓", "left": "←", "right": "→" },
+    "chars": { "up": "⇧", "down": "⇩", "left": "⇦", "right": "⇨" },
     "color": "whiteBright",
-    "trailChar": "~",
+    "trailChar": "═",
     "trailColor": "gray",
     "trailLifetime": 3
   }

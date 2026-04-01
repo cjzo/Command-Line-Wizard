@@ -13,7 +13,7 @@
   "visuals": {
     "chars": { "up": "↟", "down": "↡", "left": "«", "right": "»" },
     "color": "blueBright",
-    "trailChar": "▫",
+    "trailChar": "░",
     "trailColor": "blue",
     "trailLifetime": 4
   }
