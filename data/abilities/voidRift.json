@@ -3,7 +3,7 @@
   "name": "Void Rift",
   "description": "Stationary singularity that implodes after a delay",
   "type": "delayed",
-  "cooldown": 8,
+  "cooldown": 5,
   "damage": 35,
   "chargeGain": 12,
   "pattern": {

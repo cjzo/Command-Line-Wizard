@@ -42,7 +42,7 @@ export class DamageSystem implements System {
       }
 
       if (player) {
-        player.invincibleTicks = Math.max(player.invincibleTicks, 2);
+        player.invincibleTicks = Math.max(player.invincibleTicks, 12);
         const ren = world.getComponent<RenderableComponent>(event.target, "renderable");
         if (ren) {
           ren.fg = "whiteBright";

@@ -3,7 +3,7 @@
   "name": "Spirit Lance",
   "description": "Ethereal beam that stuns enemies in its path",
   "type": "beam",
-  "cooldown": 6,
+  "cooldown": 4,
   "damage": 8,
   "chargeGain": 4,
   "pattern": {

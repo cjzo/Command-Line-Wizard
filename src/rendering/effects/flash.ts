@@ -29,6 +29,7 @@ export function updateFlashEffects(world: World, registry?: DataRegistry): void 
     const player = world.getComponent<PlayerComponent>(id, "player")!;
     const ren = world.getComponent<RenderableComponent>(id, "renderable")!;
     if (player.invincibleTicks > 0) {
+      ren.fg = player.invincibleTicks % 2 === 0 ? "whiteBright" : "gray";
       player.invincibleTicks--;
     } else {
       ren.fg = "cyan";

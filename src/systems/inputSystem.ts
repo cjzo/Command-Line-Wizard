@@ -34,11 +34,6 @@ export class InputSystem implements System {
       if (state.left) vel.dx = -speed;
       else if (state.right) vel.dx = speed;
 
-      if (vel.dx !== 0 && vel.dy !== 0) {
-        vel.dx *= Math.SQRT1_2;
-        vel.dy *= Math.SQRT1_2;
-      }
-
       const lastDir = this.inputBuffer.getLastMovementKey();
       if (lastDir && state[lastDir]) {
         dir.facing = lastDir as Direction;

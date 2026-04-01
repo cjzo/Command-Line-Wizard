@@ -3,7 +3,7 @@
   "name": "Frost Wave",
   "description": "Cone attack that slows enemies",
   "type": "cone",
-  "cooldown": 5,
+  "cooldown": 3,
   "damage": 10,
   "chargeGain": 5,
   "pattern": {

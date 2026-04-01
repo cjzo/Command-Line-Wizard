@@ -3,7 +3,7 @@
   "name": "Shadow Bolt",
   "description": "Dark piercing bolt that passes through all enemies",
   "type": "projectile",
-  "cooldown": 4,
+  "cooldown": 2,
   "damage": 10,
   "chargeGain": 5,
   "pattern": {

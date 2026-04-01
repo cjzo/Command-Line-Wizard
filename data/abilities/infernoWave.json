@@ -3,7 +3,7 @@
   "name": "Inferno Wave",
   "description": "Hellfire cone that ignites enemies with burning damage",
   "type": "cone",
-  "cooldown": 7,
+  "cooldown": 4,
   "damage": 8,
   "chargeGain": 6,
   "pattern": {

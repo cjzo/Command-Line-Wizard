@@ -3,7 +3,7 @@
   "name": "Phantom Step",
   "description": "Phase through space leaving a damaging afterimage",
   "type": "movement",
-  "cooldown": 4,
+  "cooldown": 3,
   "damage": 18,
   "chargeGain": 9,
   "pattern": {

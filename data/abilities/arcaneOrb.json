@@ -3,7 +3,7 @@
   "name": "Arcane Orb",
   "description": "Slow-moving orb that explodes after delay or impact",
   "type": "delayed",
-  "cooldown": 6,
+  "cooldown": 4,
   "damage": 25,
   "chargeGain": 10,
   "pattern": {

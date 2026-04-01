@@ -3,7 +3,7 @@
   "name": "Lightning Beam",
   "description": "Instant line that chains to nearby enemies",
   "type": "beam",
-  "cooldown": 4,
+  "cooldown": 3,
   "damage": 12,
   "chargeGain": 6,
   "pattern": {

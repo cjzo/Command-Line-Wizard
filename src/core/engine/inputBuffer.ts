@@ -43,7 +43,7 @@ export class InputBuffer {
   };
   private lastMovementKey: MovementKey | null = null;
 
-  constructor(private movementLeaseMs = 350) {}
+  constructor(private movementLeaseMs = 200) {}
 
   private isMovementKey(key: keyof InputState): key is MovementKey {
     return MOVEMENT_KEYS.includes(key as MovementKey);

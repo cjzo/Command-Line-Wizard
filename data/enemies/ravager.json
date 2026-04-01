@@ -5,7 +5,7 @@
   "speed": 0.8,
   "damage": 16,
   "attackRange": 1,
-  "attackCooldown": 4,
+  "attackCooldown": 8,
   "chargeOnKill": 8,
   "ai": {
     "behavior": "chase",

@@ -3,7 +3,7 @@
   "name": "Fire Bolt",
   "description": "Fast straight projectile with small explosion on hit",
   "type": "projectile",
-  "cooldown": 3,
+  "cooldown": 2,
   "damage": 15,
   "chargeGain": 8,
   "pattern": {

@@ -3,7 +3,7 @@
   "name": "Dash Strike",
   "description": "Dash forward damaging enemies in path",
   "type": "movement",
-  "cooldown": 5,
+  "cooldown": 3,
   "damage": 12,
   "chargeGain": 7,
   "pattern": {
