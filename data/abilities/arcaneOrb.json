@@ -1,0 +1,26 @@
+{
+  "id": "arcaneOrb",
+  "name": "Arcane Orb",
+  "description": "Slow-moving orb that explodes after delay or impact",
+  "type": "delayed",
+  "cooldown": 6,
+  "damage": 25,
+  "chargeGain": 10,
+  "pattern": {
+    "speed": 1,
+    "maxRange": 8,
+    "detonateAfterTicks": 8,
+    "explosionRadius": 2
+  },
+  "visuals": {
+    "chars": { "up": "◉", "down": "◉", "left": "◉", "right": "◉" },
+    "color": "magenta",
+    "trailChar": "·",
+    "trailColor": "magentaBright",
+    "trailLifetime": 5
+  },
+  "onHit": {
+    "effect": "explosion",
+    "effectConfig": { "radius": 2 }
+  }
+}

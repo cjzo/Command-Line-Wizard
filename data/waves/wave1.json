@@ -1,0 +1,10 @@
+{
+  "id": "wave1",
+  "name": "Emergence",
+  "spawns": [
+    { "tick": 10, "enemyId": "shard", "count": 3, "positions": "random_edge" },
+    { "tick": 40, "enemyId": "shard", "count": 3, "positions": "random_edge" },
+    { "tick": 70, "enemyId": "orb", "count": 2, "positions": "random_edge" }
+  ],
+  "clearCondition": "all_dead"
+}

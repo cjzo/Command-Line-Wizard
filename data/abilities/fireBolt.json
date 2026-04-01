@@ -1,0 +1,25 @@
+{
+  "id": "fireBolt",
+  "name": "Fire Bolt",
+  "description": "Fast straight projectile with small explosion on hit",
+  "type": "projectile",
+  "cooldown": 3,
+  "damage": 15,
+  "chargeGain": 8,
+  "pattern": {
+    "speed": 2,
+    "maxRange": 15,
+    "piercing": false
+  },
+  "visuals": {
+    "chars": { "up": "^", "down": "v", "left": "<", "right": ">" },
+    "color": "red",
+    "trailChar": "·",
+    "trailColor": "yellow",
+    "trailLifetime": 3
+  },
+  "onHit": {
+    "effect": "explosion",
+    "effectConfig": { "radius": 1 }
+  }
+}

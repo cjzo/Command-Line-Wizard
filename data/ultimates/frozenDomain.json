@@ -1,0 +1,25 @@
+{
+  "id": "frozenDomain",
+  "name": "Frozen Domain",
+  "description": "Creates a zone that slows and damages enemies",
+  "chargeRequired": 100,
+  "windupTicks": 1,
+  "damage": 8,
+  "phases": [
+    { "tick": 0, "shape": "circle", "radius": 3, "char": "*", "color": "cyanBright" },
+    { "tick": 1, "shape": "circle", "radius": 4, "char": "·", "color": "cyan" }
+  ],
+  "statusEffect": {
+    "effectType": "slow",
+    "duration": 3,
+    "magnitude": 0.7
+  },
+  "persistent": {
+    "radius": 4,
+    "durationTicks": 15,
+    "damagePerTick": 3,
+    "char": "·",
+    "color": "cyan"
+  },
+  "screenShake": { "intensity": 1, "duration": 2 }
+}

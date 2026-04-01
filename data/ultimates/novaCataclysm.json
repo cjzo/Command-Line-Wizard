@@ -1,0 +1,16 @@
+{
+  "id": "novaCataclysm",
+  "name": "Nova Cataclysm",
+  "description": "Expanding explosion from player outward",
+  "chargeRequired": 100,
+  "windupTicks": 2,
+  "damage": 50,
+  "phases": [
+    { "tick": 0, "shape": "circle", "radius": 1, "char": "*", "color": "yellowBright" },
+    { "tick": 1, "shape": "circle", "radius": 2, "char": ".", "color": "red" },
+    { "tick": 2, "shape": "circle", "radius": 3, "char": "·", "color": "redBright" },
+    { "tick": 3, "shape": "circle", "radius": 4, "char": " ", "color": "gray" }
+  ],
+  "screenShake": { "intensity": 2, "duration": 3 },
+  "hitstop": { "duration": 2 }
+}

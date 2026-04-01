@@ -1,0 +1,12 @@
+{
+  "id": "explosion",
+  "name": "Explosion",
+  "frames": [
+    { "char": "*", "color": "yellowBright", "duration": 1 },
+    { "char": "+", "color": "red", "duration": 1 },
+    { "char": "·", "color": "gray", "duration": 1 }
+  ],
+  "radius": 1,
+  "particleCount": 6,
+  "particleSpeed": 1
+}

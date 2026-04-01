@@ -1,0 +1,11 @@
+{
+  "id": "lightningSpark",
+  "name": "Lightning Spark",
+  "frames": [
+    { "char": "┼", "color": "yellowBright", "duration": 1 },
+    { "char": "+", "color": "yellow", "duration": 1 },
+    { "char": "·", "color": "gray", "duration": 1 }
+  ],
+  "particleCount": 3,
+  "particleSpeed": 1
+}

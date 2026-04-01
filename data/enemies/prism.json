@@ -1,0 +1,23 @@
+{
+  "id": "prism",
+  "name": "Prism",
+  "hp": 20,
+  "speed": 0.7,
+  "damage": 18,
+  "attackRange": 9,
+  "attackCooldown": 8,
+  "chargeOnKill": 10,
+  "ai": {
+    "behavior": "ranged",
+    "aggroRange": 16,
+    "attackProjectile": "enemyBolt",
+    "preferredRange": 7
+  },
+  "visuals": {
+    "char": "△",
+    "damagedChar": "▲",
+    "color": "magentaBright",
+    "hitFlashColor": "whiteBright",
+    "hitFlashDuration": 2
+  }
+}

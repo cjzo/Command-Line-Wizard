@@ -1,0 +1,21 @@
+{
+  "id": "shard",
+  "name": "Shard",
+  "hp": 25,
+  "speed": 1,
+  "damage": 8,
+  "attackRange": 1,
+  "attackCooldown": 5,
+  "chargeOnKill": 4,
+  "ai": {
+    "behavior": "chase",
+    "aggroRange": 18
+  },
+  "visuals": {
+    "char": "◇",
+    "damagedChar": "◆",
+    "color": "cyanBright",
+    "hitFlashColor": "whiteBright",
+    "hitFlashDuration": 2
+  }
+}

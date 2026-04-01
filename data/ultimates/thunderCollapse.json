@@ -1,0 +1,17 @@
+{
+  "id": "thunderCollapse",
+  "name": "Thunder Collapse",
+  "description": "Mark target area then strike with lightning",
+  "chargeRequired": 100,
+  "windupTicks": 3,
+  "damage": 60,
+  "phases": [
+    { "tick": 0, "shape": "circle", "radius": 2, "char": "X", "color": "yellow" },
+    { "tick": 1, "shape": "circle", "radius": 2, "char": "X", "color": "yellowBright" },
+    { "tick": 2, "shape": "circle", "radius": 2, "char": "┼", "color": "whiteBright" },
+    { "tick": 3, "shape": "circle", "radius": 3, "char": "│", "color": "yellow" },
+    { "tick": 4, "shape": "circle", "radius": 1, "char": "*", "color": "yellowBright" }
+  ],
+  "screenShake": { "intensity": 1, "duration": 4 },
+  "hitstop": { "duration": 1 }
+}

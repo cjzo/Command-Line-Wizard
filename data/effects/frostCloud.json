@@ -1,0 +1,12 @@
+{
+  "id": "frostCloud",
+  "name": "Frost Cloud",
+  "frames": [
+    { "char": "*", "color": "cyanBright", "duration": 2 },
+    { "char": "·", "color": "cyan", "duration": 2 },
+    { "char": " ", "color": "gray", "duration": 1 }
+  ],
+  "radius": 2,
+  "particleCount": 4,
+  "particleSpeed": 0
+}

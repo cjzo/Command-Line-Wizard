@@ -1,0 +1,11 @@
+{
+  "id": "wave2",
+  "name": "Convergence",
+  "spawns": [
+    { "tick": 10, "enemyId": "orb", "count": 3, "positions": "random_edge" },
+    { "tick": 30, "enemyId": "shard", "count": 4, "positions": "random_edge" },
+    { "tick": 50, "enemyId": "prism", "count": 1, "positions": "random_edge" },
+    { "tick": 80, "enemyId": "orb", "count": 2, "positions": "random_edge" }
+  ],
+  "clearCondition": "all_dead"
+}

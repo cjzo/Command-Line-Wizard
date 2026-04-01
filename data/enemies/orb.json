@@ -1,0 +1,21 @@
+{
+  "id": "orb",
+  "name": "Orb",
+  "hp": 35,
+  "speed": 0.8,
+  "damage": 12,
+  "attackRange": 1,
+  "attackCooldown": 6,
+  "chargeOnKill": 6,
+  "ai": {
+    "behavior": "chase",
+    "aggroRange": 14
+  },
+  "visuals": {
+    "char": "○",
+    "damagedChar": "●",
+    "color": "redBright",
+    "hitFlashColor": "whiteBright",
+    "hitFlashDuration": 2
+  }
+}

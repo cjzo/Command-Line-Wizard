@@ -1,0 +1,25 @@
+{
+  "id": "frostWave",
+  "name": "Frost Wave",
+  "description": "Cone attack that slows enemies",
+  "type": "cone",
+  "cooldown": 5,
+  "damage": 10,
+  "chargeGain": 5,
+  "pattern": {
+    "range": 4,
+    "width": 3
+  },
+  "visuals": {
+    "chars": { "up": "▲", "down": "▼", "left": "◄", "right": "►" },
+    "color": "cyan",
+    "trailChar": "*",
+    "trailColor": "cyanBright",
+    "trailLifetime": 4
+  },
+  "statusEffect": {
+    "effectType": "slow",
+    "duration": 5,
+    "magnitude": 0.5
+  }
+}
