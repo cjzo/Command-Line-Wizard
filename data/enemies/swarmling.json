@@ -2,7 +2,7 @@
   "id": "swarmling",
   "name": "Swarmling",
   "hp": 8,
-  "speed": 2,
+  "speed": 1.5,
   "damage": 4,
   "attackRange": 1,
   "attackCooldown": 3,
@@ -16,6 +16,6 @@
     "damagedChar": "•",
     "color": "greenBright",
     "hitFlashColor": "whiteBright",
-    "hitFlashDuration": 1
+    "hitFlashDuration": 3
   }
 }

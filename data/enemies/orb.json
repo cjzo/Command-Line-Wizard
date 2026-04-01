@@ -2,7 +2,7 @@
   "id": "orb",
   "name": "Orb",
   "hp": 35,
-  "speed": 0.8,
+  "speed": 0.6,
   "damage": 12,
   "attackRange": 1,
   "attackCooldown": 6,
@@ -16,6 +16,6 @@
     "damagedChar": "●",
     "color": "redBright",
     "hitFlashColor": "whiteBright",
-    "hitFlashDuration": 2
+    "hitFlashDuration": 4
   }
 }

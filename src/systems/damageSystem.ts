@@ -35,6 +35,10 @@ export class DamageSystem implements System {
       const enemy = world.getComponent<EnemyComponent>(event.target, "enemy");
       if (enemy) {
         enemy.hitFlashRemaining = enemy.hitFlashDuration;
+        this.events.emit({
+          type: "combatLog",
+          message: `Hit ${enemy.enemyId} for ${event.amount}!`,
+        });
       }
 
       if (player) {

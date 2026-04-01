@@ -2,7 +2,7 @@
   "id": "hexweaver",
   "name": "Hexweaver",
   "hp": 15,
-  "speed": 1,
+  "speed": 0.5,
   "damage": 20,
   "attackRange": 14,
   "attackCooldown": 8,
@@ -18,6 +18,6 @@
     "damagedChar": "⬢",
     "color": "magentaBright",
     "hitFlashColor": "whiteBright",
-    "hitFlashDuration": 2
+    "hitFlashDuration": 4
   }
 }

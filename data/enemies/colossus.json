@@ -2,7 +2,7 @@
   "id": "colossus",
   "name": "Colossus",
   "hp": 200,
-  "speed": 1,
+  "speed": 0.4,
   "damage": 30,
   "attackRange": 1,
   "attackCooldown": 6,
@@ -17,6 +17,6 @@
     "damagedChar": "Θ",
     "color": "whiteBright",
     "hitFlashColor": "yellowBright",
-    "hitFlashDuration": 3
+    "hitFlashDuration": 5
   }
 }

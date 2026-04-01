@@ -2,7 +2,7 @@
   "id": "golem",
   "name": "Golem",
   "hp": 80,
-  "speed": 1,
+  "speed": 0.4,
   "damage": 22,
   "attackRange": 1,
   "attackCooldown": 8,
@@ -17,6 +17,6 @@
     "damagedChar": "▩",
     "color": "yellowBright",
     "hitFlashColor": "whiteBright",
-    "hitFlashDuration": 2
+    "hitFlashDuration": 4
   }
 }

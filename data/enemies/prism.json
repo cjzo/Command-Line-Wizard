@@ -2,7 +2,7 @@
   "id": "prism",
   "name": "Prism",
   "hp": 20,
-  "speed": 0.7,
+  "speed": 0.5,
   "damage": 18,
   "attackRange": 9,
   "attackCooldown": 8,
@@ -18,6 +18,6 @@
     "damagedChar": "▲",
     "color": "magentaBright",
     "hitFlashColor": "whiteBright",
-    "hitFlashDuration": 2
+    "hitFlashDuration": 4
   }
 }

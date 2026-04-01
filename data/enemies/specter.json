@@ -2,7 +2,7 @@
   "id": "specter",
   "name": "Specter",
   "hp": 25,
-  "speed": 1,
+  "speed": 0.5,
   "damage": 10,
   "attackRange": 10,
   "attackCooldown": 6,
@@ -18,6 +18,6 @@
     "damagedChar": "◉",
     "color": "cyanBright",
     "hitFlashColor": "whiteBright",
-    "hitFlashDuration": 2
+    "hitFlashDuration": 4
   }
 }

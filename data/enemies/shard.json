@@ -2,7 +2,7 @@
   "id": "shard",
   "name": "Shard",
   "hp": 25,
-  "speed": 1,
+  "speed": 0.6,
   "damage": 8,
   "attackRange": 1,
   "attackCooldown": 5,
@@ -16,6 +16,6 @@
     "damagedChar": "◆",
     "color": "cyanBright",
     "hitFlashColor": "whiteBright",
-    "hitFlashDuration": 2
+    "hitFlashDuration": 4
   }
 }

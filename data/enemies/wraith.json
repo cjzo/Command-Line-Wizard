@@ -2,7 +2,7 @@
   "id": "wraith",
   "name": "Wraith",
   "hp": 18,
-  "speed": 1,
+  "speed": 0.5,
   "damage": 14,
   "attackRange": 1,
   "attackCooldown": 6,
@@ -16,6 +16,6 @@
     "damagedChar": "⊕",
     "color": "blueBright",
     "hitFlashColor": "whiteBright",
-    "hitFlashDuration": 2
+    "hitFlashDuration": 4
   }
 }

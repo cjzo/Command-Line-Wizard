@@ -14,10 +14,12 @@ export function updateFlashEffects(world: World, registry?: DataRegistry): void 
     if (enemy.hitFlashRemaining > 0) {
       enemy.hitFlashRemaining--;
       ren.fg = enemy.hitFlashColor;
+      ren.char = enemy.damagedChar;
     } else {
       const enemyData = registry?.getEnemy(enemy.enemyId);
       if (enemyData) {
         ren.fg = enemyData.visuals.color;
+        ren.char = enemyData.visuals.char;
       }
     }
   }
