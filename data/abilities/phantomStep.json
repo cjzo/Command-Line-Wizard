@@ -1,0 +1,20 @@
+{
+  "id": "phantomStep",
+  "name": "Phantom Step",
+  "description": "Phase through space leaving a damaging afterimage",
+  "type": "movement",
+  "cooldown": 4,
+  "damage": 18,
+  "chargeGain": 9,
+  "pattern": {
+    "dashDistance": 6,
+    "damageWidth": 1
+  },
+  "visuals": {
+    "chars": { "up": "↟", "down": "↡", "left": "«", "right": "»" },
+    "color": "blueBright",
+    "trailChar": "▫",
+    "trailColor": "blue",
+    "trailLifetime": 4
+  }
+}

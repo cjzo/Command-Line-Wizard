@@ -1,0 +1,11 @@
+{
+  "id": "wave4",
+  "name": "Whispers",
+  "spawns": [
+    { "tick": 10, "enemyId": "shard", "count": 4, "positions": "random_edge" },
+    { "tick": 35, "enemyId": "wraith", "count": 2, "positions": "random_edge" },
+    { "tick": 60, "enemyId": "shard", "count": 3, "positions": "random_edge" },
+    { "tick": 80, "enemyId": "wraith", "count": 3, "positions": "random_edge" }
+  ],
+  "clearCondition": "all_dead"
+}

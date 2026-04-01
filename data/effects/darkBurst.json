@@ -1,0 +1,11 @@
+{
+  "id": "darkBurst",
+  "name": "Dark Burst",
+  "frames": [
+    { "char": "▪", "color": "blueBright", "duration": 1 },
+    { "char": "•", "color": "gray", "duration": 1 },
+    { "char": "·", "color": "gray", "duration": 1 }
+  ],
+  "particleCount": 4,
+  "particleSpeed": 1
+}

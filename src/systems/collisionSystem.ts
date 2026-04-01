@@ -3,6 +3,7 @@ import type { PositionComponent } from "../components/position.js";
 import type { ProjectileComponent } from "../components/projectile.js";
 import type { VelocityComponent } from "../components/velocity.js";
 import type { EventBus } from "../core/events/eventBus.js";
+import { isNearHit } from "../utils/combat.js";
 
 function pathTouchesTarget(
   currentX: number,
@@ -20,9 +21,7 @@ function pathTouchesTarget(
     const t = step / steps;
     const x = startX + dx * t;
     const y = startY + dy * t;
-    if (Math.round(x) === Math.round(targetX) && Math.round(y) === Math.round(targetY)) {
-      return true;
-    }
+    if (isNearHit(targetX, targetY, x, y)) return true;
   }
 
   return false;

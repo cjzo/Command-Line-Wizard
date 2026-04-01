@@ -78,11 +78,12 @@ export const EnemyVisualsSchema = z.object({
 });
 
 export const EnemyAISchema = z.object({
-  behavior: z.enum(["chase", "ranged", "patrol"]),
+  behavior: z.enum(["chase", "ranged", "patrol", "blink", "charger"]),
   aggroRange: z.number(),
   attackProjectile: z.string().optional(),
   preferredRange: z.number().optional(),
   patrolRadius: z.number().optional(),
+  chargeRange: z.number().optional(),
 });
 
 export const EnemySchema = z.object({

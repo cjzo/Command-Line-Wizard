@@ -1,0 +1,21 @@
+{
+  "id": "swarmling",
+  "name": "Swarmling",
+  "hp": 8,
+  "speed": 3,
+  "damage": 4,
+  "attackRange": 1,
+  "attackCooldown": 3,
+  "chargeOnKill": 2,
+  "ai": {
+    "behavior": "chase",
+    "aggroRange": 20
+  },
+  "visuals": {
+    "char": "∙",
+    "damagedChar": "•",
+    "color": "greenBright",
+    "hitFlashColor": "whiteBright",
+    "hitFlashDuration": 1
+  }
+}

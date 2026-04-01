@@ -1,0 +1,16 @@
+{
+  "id": "bladeStorm",
+  "name": "Blade Storm",
+  "description": "Spinning blades radiate outward in all directions",
+  "chargeRequired": 100,
+  "windupTicks": 1,
+  "damage": 40,
+  "phases": [
+    { "tick": 0, "shape": "circle", "radius": 2, "char": "╬", "color": "whiteBright" },
+    { "tick": 1, "shape": "circle", "radius": 4, "char": "┼", "color": "gray" },
+    { "tick": 2, "shape": "circle", "radius": 6, "char": "+", "color": "whiteBright" },
+    { "tick": 3, "shape": "circle", "radius": 8, "char": "·", "color": "gray" }
+  ],
+  "screenShake": { "intensity": 2, "duration": 3 },
+  "hitstop": { "duration": 2 }
+}

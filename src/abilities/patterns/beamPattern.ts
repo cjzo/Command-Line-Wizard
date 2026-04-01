@@ -10,6 +10,7 @@ import { createLifetime } from "../../components/lifetime.js";
 import { RenderLayer } from "../../components/renderable.js";
 import { directionToVec } from "../../utils/direction.js";
 import { distance } from "../../utils/vector.js";
+import { isNearHit } from "../../utils/combat.js";
 
 export function fireBeam(
   world: World,
@@ -44,7 +45,7 @@ export function fireBeam(
     for (const eid of enemies) {
       if (hitEntities.includes(eid)) continue;
       const epos = world.getComponent<PositionComponent>(eid, "position")!;
-      if (Math.round(epos.x) === Math.round(bx) && Math.round(epos.y) === Math.round(by)) {
+      if (isNearHit(epos.x, epos.y, bx, by)) {
         hitEntities.push(eid);
         events.emit({
           type: "damageDealt",

@@ -8,6 +8,7 @@ import { createRenderable, RenderLayer } from "../../components/renderable.js";
 import { createLifetime } from "../../components/lifetime.js";
 import { directionToVec } from "../../utils/direction.js";
 import { clamp } from "../../utils/math.js";
+import { isNearHit } from "../../utils/combat.js";
 import type { GameConfig } from "../../config/defaults.js";
 
 export function executeDash(
@@ -46,7 +47,7 @@ export function executeDash(
     for (const eid of enemies) {
       if (hitSet.has(eid)) continue;
       const epos = world.getComponent<PositionComponent>(eid, "position")!;
-      if (Math.round(epos.x) === Math.round(cx) && Math.round(epos.y) === Math.round(cy)) {
+      if (isNearHit(epos.x, epos.y, cx, cy)) {
         hitSet.add(eid);
         events.emit({
           type: "damageDealt",

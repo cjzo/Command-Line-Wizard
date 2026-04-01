@@ -1,0 +1,21 @@
+{
+  "id": "wraith",
+  "name": "Wraith",
+  "hp": 18,
+  "speed": 1,
+  "damage": 14,
+  "attackRange": 1,
+  "attackCooldown": 6,
+  "chargeOnKill": 8,
+  "ai": {
+    "behavior": "blink",
+    "aggroRange": 20
+  },
+  "visuals": {
+    "char": "⊗",
+    "damagedChar": "⊕",
+    "color": "blueBright",
+    "hitFlashColor": "whiteBright",
+    "hitFlashDuration": 2
+  }
+}

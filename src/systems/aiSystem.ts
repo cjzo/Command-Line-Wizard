@@ -7,6 +7,8 @@ import type { DataRegistry } from "../core/data/registry.js";
 import { updateChase } from "../enemies/behaviors/chaseBehavior.js";
 import { updateRanged } from "../enemies/behaviors/rangedBehavior.js";
 import { updatePatrol } from "../enemies/behaviors/patrolBehavior.js";
+import { updateBlink } from "../enemies/behaviors/blinkBehavior.js";
+import { updateCharger } from "../enemies/behaviors/chargerBehavior.js";
 
 export class AISystem implements System {
   readonly name = "AISystem";
@@ -43,6 +45,12 @@ export class AISystem implements System {
           break;
         case "patrol":
           updatePatrol(world, eid, playerPos, enemyData, this.events);
+          break;
+        case "blink":
+          updateBlink(world, eid, playerPos, enemyData, this.events);
+          break;
+        case "charger":
+          updateCharger(world, eid, playerPos, enemyData, this.events);
           break;
       }
     }

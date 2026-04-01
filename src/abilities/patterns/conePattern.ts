@@ -9,6 +9,7 @@ import { createLifetime } from "../../components/lifetime.js";
 import { createAreaEffect } from "../../components/areaEffect.js";
 import { RenderLayer } from "../../components/renderable.js";
 import { directionToVec } from "../../utils/direction.js";
+import { isNearHit } from "../../utils/combat.js";
 
 function getConePositions(
   origin: { x: number; y: number },
@@ -71,7 +72,7 @@ export function fireCone(
     for (const eid of enemies) {
       if (hitSet.has(eid)) continue;
       const epos = world.getComponent<PositionComponent>(eid, "position")!;
-      if (Math.round(epos.x) === Math.round(pos.x) && Math.round(epos.y) === Math.round(pos.y)) {
+      if (isNearHit(epos.x, epos.y, pos.x, pos.y)) {
         hitSet.add(eid);
         events.emit({
           type: "damageDealt",

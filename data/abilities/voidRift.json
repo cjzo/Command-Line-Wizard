@@ -1,0 +1,26 @@
+{
+  "id": "voidRift",
+  "name": "Void Rift",
+  "description": "Stationary singularity that implodes after a delay",
+  "type": "delayed",
+  "cooldown": 8,
+  "damage": 35,
+  "chargeGain": 12,
+  "pattern": {
+    "speed": 0,
+    "maxRange": 1,
+    "detonateAfterTicks": 6,
+    "explosionRadius": 3
+  },
+  "visuals": {
+    "chars": { "up": "◈", "down": "◈", "left": "◈", "right": "◈" },
+    "color": "magentaBright",
+    "trailChar": "∘",
+    "trailColor": "magenta",
+    "trailLifetime": 5
+  },
+  "onHit": {
+    "effect": "implosion",
+    "effectConfig": { "radius": 3 }
+  }
+}

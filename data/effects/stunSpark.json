@@ -1,0 +1,11 @@
+{
+  "id": "stunSpark",
+  "name": "Stun Spark",
+  "frames": [
+    { "char": "✦", "color": "whiteBright", "duration": 1 },
+    { "char": "✧", "color": "yellowBright", "duration": 1 },
+    { "char": "·", "color": "gray", "duration": 1 }
+  ],
+  "particleCount": 2,
+  "particleSpeed": 0
+}

@@ -1,0 +1,25 @@
+{
+  "id": "infernoWave",
+  "name": "Inferno Wave",
+  "description": "Hellfire cone that ignites enemies with burning damage",
+  "type": "cone",
+  "cooldown": 7,
+  "damage": 8,
+  "chargeGain": 6,
+  "pattern": {
+    "range": 5,
+    "width": 4
+  },
+  "visuals": {
+    "chars": { "up": "▲", "down": "▼", "left": "◄", "right": "►" },
+    "color": "red",
+    "trailChar": "~",
+    "trailColor": "yellowBright",
+    "trailLifetime": 4
+  },
+  "statusEffect": {
+    "effectType": "dot",
+    "duration": 6,
+    "magnitude": 4
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "burnTick",
+  "name": "Burn Tick",
+  "frames": [
+    { "char": "~", "color": "redBright", "duration": 1 },
+    { "char": "·", "color": "yellow", "duration": 1 },
+    { "char": " ", "color": "gray", "duration": 1 }
+  ],
+  "particleCount": 2,
+  "particleSpeed": 0
+}

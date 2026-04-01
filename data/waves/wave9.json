@@ -1,0 +1,17 @@
+{
+  "id": "wave9",
+  "name": "Chaos Storm",
+  "spawns": [
+    { "tick": 5, "enemyId": "ravager", "count": 3, "positions": "random_edge" },
+    { "tick": 15, "enemyId": "wraith", "count": 3, "positions": "random_edge" },
+    { "tick": 25, "enemyId": "golem", "count": 2, "positions": "random_edge" },
+    { "tick": 35, "enemyId": "swarmling", "count": 8, "positions": "random_edge" },
+    { "tick": 45, "enemyId": "hexweaver", "count": 2, "positions": "random_edge" },
+    { "tick": 55, "enemyId": "specter", "count": 3, "positions": "random_edge" },
+    { "tick": 65, "enemyId": "prism", "count": 3, "positions": "random_edge" },
+    { "tick": 75, "enemyId": "ravager", "count": 4, "positions": "random_edge" },
+    { "tick": 85, "enemyId": "wraith", "count": 3, "positions": "random_edge" },
+    { "tick": 100, "enemyId": "orb", "count": 4, "positions": "random_edge" }
+  ],
+  "clearCondition": "all_dead"
+}

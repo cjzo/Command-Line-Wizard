@@ -1,0 +1,23 @@
+{
+  "id": "specter",
+  "name": "Specter",
+  "hp": 25,
+  "speed": 1,
+  "damage": 10,
+  "attackRange": 10,
+  "attackCooldown": 6,
+  "chargeOnKill": 8,
+  "ai": {
+    "behavior": "ranged",
+    "aggroRange": 16,
+    "attackProjectile": "enemyBolt",
+    "preferredRange": 8
+  },
+  "visuals": {
+    "char": "◎",
+    "damagedChar": "◉",
+    "color": "cyanBright",
+    "hitFlashColor": "whiteBright",
+    "hitFlashDuration": 2
+  }
+}

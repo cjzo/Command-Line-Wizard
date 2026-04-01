@@ -1,0 +1,14 @@
+{
+  "id": "wave8",
+  "name": "Siege",
+  "spawns": [
+    { "tick": 10, "enemyId": "golem", "count": 2, "positions": "random_edge" },
+    { "tick": 20, "enemyId": "hexweaver", "count": 2, "positions": "random_edge" },
+    { "tick": 45, "enemyId": "golem", "count": 2, "positions": "random_edge" },
+    { "tick": 55, "enemyId": "hexweaver", "count": 2, "positions": "random_edge" },
+    { "tick": 75, "enemyId": "shard", "count": 5, "positions": "random_edge" },
+    { "tick": 95, "enemyId": "golem", "count": 1, "positions": "random_edge" },
+    { "tick": 95, "enemyId": "hexweaver", "count": 3, "positions": "random_edge" }
+  ],
+  "clearCondition": "all_dead"
+}

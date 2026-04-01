@@ -1,0 +1,22 @@
+{
+  "id": "colossus",
+  "name": "Colossus",
+  "hp": 200,
+  "speed": 1,
+  "damage": 30,
+  "attackRange": 1,
+  "attackCooldown": 6,
+  "chargeOnKill": 50,
+  "ai": {
+    "behavior": "charger",
+    "aggroRange": 25,
+    "chargeRange": 15
+  },
+  "visuals": {
+    "char": "Ω",
+    "damagedChar": "Θ",
+    "color": "whiteBright",
+    "hitFlashColor": "yellowBright",
+    "hitFlashDuration": 3
+  }
+}

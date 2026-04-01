@@ -1,0 +1,12 @@
+{
+  "id": "wave5",
+  "name": "Tremors",
+  "spawns": [
+    { "tick": 10, "enemyId": "orb", "count": 3, "positions": "random_edge" },
+    { "tick": 30, "enemyId": "golem", "count": 1, "positions": "random_edge" },
+    { "tick": 55, "enemyId": "orb", "count": 2, "positions": "random_edge" },
+    { "tick": 75, "enemyId": "golem", "count": 2, "positions": "random_edge" },
+    { "tick": 100, "enemyId": "shard", "count": 4, "positions": "random_edge" }
+  ],
+  "clearCondition": "all_dead"
+}

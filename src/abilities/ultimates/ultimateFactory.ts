@@ -4,6 +4,9 @@ import type { EventBus } from "../../core/events/eventBus.js";
 import { executeNovaCataclysm } from "./novaCataclysm.js";
 import { executeThunderCollapse } from "./thunderCollapse.js";
 import { executeFrozenDomain } from "./frozenDomain.js";
+import { executeVoidCollapse } from "./voidCollapse.js";
+import { executeSolarFlare } from "./solarFlare.js";
+import { executeBladeStorm } from "./bladeStorm.js";
 
 type UltimateExecutor = (
   world: World,
@@ -16,6 +19,9 @@ const ULTIMATE_MAP: Record<string, UltimateExecutor> = {
   novaCataclysm: executeNovaCataclysm,
   thunderCollapse: executeThunderCollapse,
   frozenDomain: executeFrozenDomain,
+  voidCollapse: executeVoidCollapse,
+  solarFlare: executeSolarFlare,
+  bladeStorm: executeBladeStorm,
 };
 
 export function executeUltimate(

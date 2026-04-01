@@ -1,0 +1,14 @@
+{
+  "id": "wave7",
+  "name": "Dark Convergence",
+  "spawns": [
+    { "tick": 10, "enemyId": "wraith", "count": 2, "positions": "random_edge" },
+    { "tick": 25, "enemyId": "specter", "count": 2, "positions": "random_edge" },
+    { "tick": 40, "enemyId": "ravager", "count": 2, "positions": "random_edge" },
+    { "tick": 55, "enemyId": "wraith", "count": 3, "positions": "random_edge" },
+    { "tick": 70, "enemyId": "prism", "count": 2, "positions": "random_edge" },
+    { "tick": 90, "enemyId": "ravager", "count": 3, "positions": "random_edge" },
+    { "tick": 110, "enemyId": "specter", "count": 2, "positions": "random_edge" }
+  ],
+  "clearCondition": "all_dead"
+}

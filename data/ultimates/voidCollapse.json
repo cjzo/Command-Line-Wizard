@@ -1,0 +1,17 @@
+{
+  "id": "voidCollapse",
+  "name": "Void Collapse",
+  "description": "Create a black hole that pulls enemies inward then detonates",
+  "chargeRequired": 100,
+  "windupTicks": 3,
+  "damage": 45,
+  "phases": [
+    { "tick": 0, "shape": "circle", "radius": 5, "char": "○", "color": "magenta" },
+    { "tick": 1, "shape": "circle", "radius": 4, "char": "◎", "color": "magentaBright" },
+    { "tick": 2, "shape": "circle", "radius": 3, "char": "◉", "color": "blueBright" },
+    { "tick": 3, "shape": "circle", "radius": 2, "char": "●", "color": "blue" },
+    { "tick": 4, "shape": "circle", "radius": 4, "char": "*", "color": "whiteBright" }
+  ],
+  "screenShake": { "intensity": 3, "duration": 4 },
+  "hitstop": { "duration": 2 }
+}

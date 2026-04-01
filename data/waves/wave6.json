@@ -1,0 +1,13 @@
+{
+  "id": "wave6",
+  "name": "The Swarm",
+  "spawns": [
+    { "tick": 10, "enemyId": "swarmling", "count": 8, "positions": "random_edge" },
+    { "tick": 30, "enemyId": "swarmling", "count": 6, "positions": "random_edge" },
+    { "tick": 45, "enemyId": "prism", "count": 2, "positions": "random_edge" },
+    { "tick": 60, "enemyId": "swarmling", "count": 8, "positions": "random_edge" },
+    { "tick": 80, "enemyId": "swarmling", "count": 6, "positions": "random_edge" },
+    { "tick": 95, "enemyId": "prism", "count": 1, "positions": "random_edge" }
+  ],
+  "clearCondition": "all_dead"
+}

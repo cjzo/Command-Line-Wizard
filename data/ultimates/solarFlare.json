@@ -1,0 +1,21 @@
+{
+  "id": "solarFlare",
+  "name": "Solar Flare",
+  "description": "The battlefield erupts in blinding light burning everything",
+  "chargeRequired": 100,
+  "windupTicks": 2,
+  "damage": 30,
+  "phases": [
+    { "tick": 0, "shape": "circle", "radius": 1, "char": "☀", "color": "yellowBright" },
+    { "tick": 1, "shape": "circle", "radius": 3, "char": "*", "color": "yellow" },
+    { "tick": 2, "shape": "circle", "radius": 5, "char": "·", "color": "red" },
+    { "tick": 3, "shape": "circle", "radius": 7, "char": ".", "color": "redBright" },
+    { "tick": 4, "shape": "circle", "radius": 9, "char": " ", "color": "gray" }
+  ],
+  "statusEffect": {
+    "effectType": "dot",
+    "duration": 4,
+    "magnitude": 5
+  },
+  "screenShake": { "intensity": 3, "duration": 4 }
+}

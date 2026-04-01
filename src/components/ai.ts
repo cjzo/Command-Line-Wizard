@@ -1,7 +1,7 @@
 import type { Component } from "../core/ecs/types.js";
 
-export type AIBehaviorId = "chase" | "ranged" | "patrol";
-export type AIState = "idle" | "pursuing" | "attacking" | "retreating" | "patrolling";
+export type AIBehaviorId = "chase" | "ranged" | "patrol" | "blink" | "charger";
+export type AIState = "idle" | "pursuing" | "attacking" | "retreating" | "patrolling" | "blinking" | "telegraphing" | "charging";
 
 export interface AIComponent extends Component {
   readonly type: "ai";

@@ -41,6 +41,7 @@ export class InputBuffer {
     left: 0,
     right: 0,
   };
+  private lastMovementKey: MovementKey | null = null;
 
   constructor(private movementLeaseMs = 180) {}
 
@@ -63,6 +64,7 @@ export class InputBuffer {
   press(key: keyof InputState): void {
     if (this.isMovementKey(key)) {
       this.movementExpiresAt[key] = Date.now() + this.movementLeaseMs;
+      this.lastMovementKey = key;
       return;
     }
 
@@ -102,6 +104,10 @@ export class InputBuffer {
     return null;
   }
 
+  getLastMovementKey(): MovementKey | null {
+    return this.lastMovementKey;
+  }
+
   reset(): void {
     this.transient = createInputState();
     this.consumed = createInputState();
@@ -111,5 +117,6 @@ export class InputBuffer {
       left: 0,
       right: 0,
     };
+    this.lastMovementKey = null;
   }
 }

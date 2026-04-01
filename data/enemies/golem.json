@@ -1,0 +1,22 @@
+{
+  "id": "golem",
+  "name": "Golem",
+  "hp": 80,
+  "speed": 1,
+  "damage": 22,
+  "attackRange": 1,
+  "attackCooldown": 8,
+  "chargeOnKill": 12,
+  "ai": {
+    "behavior": "charger",
+    "aggroRange": 15,
+    "chargeRange": 10
+  },
+  "visuals": {
+    "char": "▣",
+    "damagedChar": "▩",
+    "color": "yellowBright",
+    "hitFlashColor": "whiteBright",
+    "hitFlashDuration": 2
+  }
+}

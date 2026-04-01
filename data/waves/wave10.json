@@ -1,0 +1,12 @@
+{
+  "id": "wave10",
+  "name": "The Colossus",
+  "spawns": [
+    { "tick": 10, "enemyId": "colossus", "count": 1, "positions": "random_edge" },
+    { "tick": 30, "enemyId": "swarmling", "count": 6, "positions": "random_edge" },
+    { "tick": 60, "enemyId": "swarmling", "count": 6, "positions": "random_edge" },
+    { "tick": 90, "enemyId": "shard", "count": 4, "positions": "random_edge" },
+    { "tick": 120, "enemyId": "swarmling", "count": 8, "positions": "random_edge" }
+  ],
+  "clearCondition": "all_dead"
+}

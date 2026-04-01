@@ -1,0 +1,21 @@
+{
+  "id": "ravager",
+  "name": "Ravager",
+  "hp": 40,
+  "speed": 2,
+  "damage": 16,
+  "attackRange": 1,
+  "attackCooldown": 4,
+  "chargeOnKill": 8,
+  "ai": {
+    "behavior": "chase",
+    "aggroRange": 18
+  },
+  "visuals": {
+    "char": "✦",
+    "damagedChar": "✧",
+    "color": "redBright",
+    "hitFlashColor": "yellowBright",
+    "hitFlashDuration": 2
+  }
+}

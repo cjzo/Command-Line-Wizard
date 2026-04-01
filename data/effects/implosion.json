@@ -1,0 +1,12 @@
+{
+  "id": "implosion",
+  "name": "Implosion",
+  "frames": [
+    { "char": "○", "color": "magentaBright", "duration": 1 },
+    { "char": "●", "color": "magenta", "duration": 1 },
+    { "char": "·", "color": "blue", "duration": 1 }
+  ],
+  "radius": 2,
+  "particleCount": 5,
+  "particleSpeed": 0
+}

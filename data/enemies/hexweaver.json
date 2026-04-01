@@ -1,0 +1,23 @@
+{
+  "id": "hexweaver",
+  "name": "Hexweaver",
+  "hp": 15,
+  "speed": 1,
+  "damage": 20,
+  "attackRange": 14,
+  "attackCooldown": 8,
+  "chargeOnKill": 14,
+  "ai": {
+    "behavior": "ranged",
+    "aggroRange": 18,
+    "attackProjectile": "enemyBolt",
+    "preferredRange": 10
+  },
+  "visuals": {
+    "char": "⬡",
+    "damagedChar": "⬢",
+    "color": "magentaBright",
+    "hitFlashColor": "whiteBright",
+    "hitFlashDuration": 2
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "spiritLance",
+  "name": "Spirit Lance",
+  "description": "Ethereal beam that stuns enemies in its path",
+  "type": "beam",
+  "cooldown": 6,
+  "damage": 8,
+  "chargeGain": 4,
+  "pattern": {
+    "range": 15,
+    "chainCount": 0
+  },
+  "visuals": {
+    "chars": { "up": "║", "down": "║", "left": "═", "right": "═" },
+    "color": "whiteBright",
+    "trailChar": "·",
+    "trailColor": "white",
+    "trailLifetime": 2
+  },
+  "statusEffect": {
+    "effectType": "stun",
+    "duration": 3,
+    "magnitude": 1.0
+  }
+}
